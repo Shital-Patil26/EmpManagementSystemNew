@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- linear-gradient(black,yellow,green,blue); -->
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   
+    body{
+    background-color:#DDE6ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .container{
+    background-color: #27374D;
+    padding: 15px;
+    border-radius: 10px;
+    width:60%;
+    
+    }
+	.registration{
+	font-family: algerian;
+	color:#07d1f9;
+	text-align: center;
+	border-bottom: 3px dashed white;
+	font-size:30px;
+	}
+	
+	form .container2 {
+	display: flex;
+	flex-wrap: wrap;
+	}
+	
+	form .container2 .inputbox{
+	width:calc(100%/2 - 20px);
+	margin:10px;
+	}
+	
+	form .container2 .inputbox input{
+	height:30px;
+	width: 100%;
+	margin-top:5px;
+	color:black;
+	}
+	
+	.lastinput{
+	height:45px;
+	width:100%;
+	font-size:25px;
+	color:white;
+	background-color:  #91e2f2;
+	border:none;
+	height:1cm;
+	border-radius: 10px;
+	cursor:pointer;
+	}
+	
+	.lastinput:hover {
+  background-color:#07d1f9;
+  color: white;
+}
+	
+	.inputtext{
+	color:#91e2f2;
+	font-size:20px;
+	}
+	
+  .signup {
+  	color:white;
+  text-align: center; 
+  height:30px;
+  width:100%;
+  font-size:20px;  
+}
+
+
+</style>
+</head>
+
+<body>
+
+ <div class="container">
+ 
+ <div class="registration">
+ 		Registration Form</div>
+ 		
+   <form action="SignupController" method="get">
+   <div class = "container2">
+      
+      <div class="inputbox">
+      <span class="inputtext">Name</span>
+      <input type="text" placeholder="Enter Name" name="name" required>
+      </div>
+      
+      <div class="inputbox">
+      <span class="inputtext">Password</span>
+      <input type="password" placeholder="Enter Password" name="pwd"> 
+      </div>
+      
+      <div class="inputbox">
+      <span class="inputtext">Email</span>
+      <input type="text" placeholder="Enter Email" name="email"> 
+      </div>
+      
+      <div class="inputbox">       
+      <span class="inputtext">Phone</span>
+      <input type="text" name="phone" placeholder="Enter Phone no"> 
+      </div>
+      
+      <div class="inputbox">
+      <span class="inputtext">Designation</span>
+       <input type="text" name="desg" placeholder="Enter Designation">
+       </div>
+       
+       <div class="inputbox">
+       <span class="inputtext">Date-Of-Joining</span>
+      <input type="date" name="doj" placeholder="Enter Date-of-Joining"> 
+       </div>
+       
+      <div class="inputbox">
+       <span class="inputtext">Date-Of-Birth</span>
+      <input type="date" name="dob" placeholder="Enter Date-Of-Birth"> 
+      </div>
+      
+      <div class="inputbox">   
+      <span class="inputtext">Salary</span>   
+      <input type="text" name="salary" placeholder="Enter Salary"> 
+      </div>
+      
+      <div class="inputbox">
+      <span class="inputtext">City</span>
+      <input type="text" name="city" placeholder="Enter City"> 
+      </div>
+      
+      <div class="inputbox">  
+      <span class="inputtext"> State</span>    
+      <input type="text" name="state" placeholder="Enter State"> 
+      </div>
+      
+      <div class="inputbox">
+      <span class="inputtext">Zip_Code</span>
+      <input type="text" name="zipcode" placeholder="Enter Zip-Code">
+      </div>
+      
+      <div class="inputbox">
+      <span class="inputtext">Country</span>
+      <input type="text" name="country" placeholder="Enter Country"> 
+      </div>
+      
+      <input class="lastinput" type="submit" value="Submit"> 
+      
+      <div class="signup">
+         Already have an Account? 
+         <a href="Login.html" style="text-decoration: none; color:white;" >Login Here</a>
+      </div>
+   
+   </div>
+   </form>
+      
+</div>
+</body>
+</html>

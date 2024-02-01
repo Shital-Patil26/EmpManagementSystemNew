@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--  -->
+<title>Insert title here</title>
+<style>
+body { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-family: sans-serif; 
+	line-height: 1.5; 
+	min-height: 100vh; 
+	background-color:#DDE6ED;
+	
+	flex-direction: column; 
+	margin: 0; 
+} 
+
+.main { 
+	background-color: #27374D;
+	border-radius: 15px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	padding: 10px 20px; 
+	transition: transform 0.2s; 
+	width: 400px; 
+	text-align: center; 
+} 
+
+h1 { 
+	color: #4CAF50;
+	border-bottom: 3px dashed white;	
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color: #4CAF50; 
+	font-weight: bold; 
+} 
+
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white;  
+	background-color: #4CAF50; 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.lastinput{
+	height:45px;
+	width:100%;
+	font-size:22px;
+	color:white;
+	background-color:  #1f914e;
+	border:none;
+	height:1cm;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+	}
+	
+.lastinput:hover {
+  background-color: #04cf58;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+ <div class="main">
+ 
+    <h1>Login Here</h1>
+
+   
+   	   <form action="LoginController" method="get">
+   
+       	<label for="username"> Username: </label> 
+		<input type="text" id="first" name="username" placeholder="Enter your Username" required> 
+   
+   		<label for="pwd"> Password: </label>  
+		<input type="password" id="password" name="pwd" placeholder="Enter your Password" required> 
+
+		<div class="wrap"> 
+			
+			<input type="submit" value="Login" class="lastinput"/>
+		</div> 
+	   </form> 
+		<p style="color:#4CAF50;">Not registered?<a href="sign.html" style="text-decoration: none; color: #4CAF50;"> Create an account	</a> 
+		</p> 
+	</div>
+</body>
+</html>
